@@ -1,0 +1,20 @@
+<project default="EpsilonStandaloneBase">
+	<target name="EpsilonStandaloneBase">
+		<echo>Building Standalone base jar</echo>
+		<jar destfile="epsilon-standalone.jar">
+			<fileset dir="../org.eclipse.epsilon.eol.engine/bin"/>
+			<fileset dir="../org.eclipse.epsilon.egl.engine/bin"/>
+			<fileset dir="../org.eclipse.epsilon.egl.traceability.fine/bin"/>
+			<fileset dir="../org.eclipse.epsilon.ecl.engine/bin"/>
+			<fileset dir="../org.eclipse.epsilon.eml.engine/bin"/>
+			<fileset dir="../org.eclipse.epsilon.etl.engine/bin"/>
+			<fileset dir="../org.eclipse.epsilon.evl.engine/bin"/>
+			<fileset dir="../org.eclipse.epsilon.antlr.postprocessor/bin"/>
+			<fileset dir="../org.eclipse.epsilon.antlr.postprocessor.model/bin"/>
+			<fileset dir="../org.eclipse.epsilon.commons/bin"/>
+			<fileset dir="../org.eclipse.epsilon.emc.composite/bin"/>
+			<fileset dir="../org.eclipse.epsilon.workflow/bin"/>
+			<fileset dir="../org.antlr.runtime_3.1.b1"/>
+		</jar>
+	</target>
+</project>
